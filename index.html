@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
   <title>Sudoku 25 – Elevate Your Game</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -114,6 +116,14 @@
       margin-left: 0.5rem;
     }
 
+    .icon {
+  width: 40px;
+  height: 40px;
+  color: #007aff;
+  margin-bottom: 1rem;
+}
+
+
     @media (max-width: 600px) {
       header h1 {
         font-size: 2.2rem;
@@ -133,23 +143,26 @@
     <a class="cta-button" href="https://apps.apple.com/app/your-app-id">Download on the App Store</a>
   </header>
 
-  <section class="section">
-    <h2>Why Sudoku 25?</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>Advanced Stats</h3>
-        <p>Track solve times, mistake averages, and puzzle difficulty with precision.</p>
-      </div>
-      <div class="feature">
-        <h3>Elegant Interface</h3>
-        <p>Minimalist design with smooth interactions and focus-enhancing layout.</p>
-      </div>
-      <div class="feature">
-        <h3>Logical Difficulty</h3>
-        <p>True difficulty ratings based on logic complexity, not just empty squares.</p>
-      </div>
+<section class="section">
+  <h2>Why Sudoku 25?</h2>
+  <div class="features">
+    <div class="feature">
+      <i data-lucide="bar-chart-4" class="icon"></i>
+      <h3>Advanced Stats</h3>
+      <p>Track solve times, mistake averages, and puzzle difficulty with precision.</p>
     </div>
-  </section>
+    <div class="feature">
+      <i data-lucide="layout-dashboard" class="icon"></i>
+      <h3>Elegant Interface</h3>
+      <p>Minimalist design with smooth interactions and focus-enhancing layout.</p>
+    </div>
+    <div class="feature">
+      <i data-lucide="brain-circuit" class="icon"></i>
+      <h3>Logical Difficulty</h3>
+      <p>True difficulty ratings based on logic complexity, not just empty squares.</p>
+    </div>
+  </div>
+</section>
 
   <section class="section">
     <h2>App Preview</h2>
@@ -165,6 +178,9 @@
     <br />
     <a href="privacy-policy.html">Privacy Policy</a>
   </footer>
+<script>
+  lucide.createIcons();
+</script>
 
 </body>
 </html>
