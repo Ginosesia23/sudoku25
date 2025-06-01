@@ -3,46 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sudoku 25 – The Ultimate Sudoku App</title>
+  <title>Sudoku 25 – Elevate Your Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #f9f9f9;
+      font-family: 'Inter', sans-serif;
+      background: #f8f9fa;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #fff;
-      padding: 2rem 1rem;
+      background: #ffffff;
+      padding: 4rem 1rem;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #222;
     }
 
     header p {
-      margin: 0.5rem 0 1.5rem;
       font-size: 1.2rem;
       color: #666;
+      margin-bottom: 2rem;
     }
 
     .cta-button {
-      padding: 0.75rem 1.5rem;
+      padding: 0.9rem 1.8rem;
       background-color: #007aff;
       color: white;
       border: none;
       border-radius: 8px;
       font-size: 1rem;
       text-decoration: none;
-      transition: background-color 0.3s;
+      transition: background 0.3s ease;
     }
 
     .cta-button:hover {
@@ -50,9 +54,16 @@
     }
 
     .section {
-      padding: 3rem 1rem;
       max-width: 1000px;
       margin: auto;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #222;
     }
 
     .features {
@@ -60,42 +71,57 @@
       flex-wrap: wrap;
       gap: 2rem;
       justify-content: center;
-      margin-top: 2rem;
     }
 
     .feature {
-      flex: 1 1 250px;
       background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      text-align: center;
+      padding: 2rem;
+      border-radius: 16px;
+      flex: 1 1 280px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 
     .feature h3 {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+      color: #007aff;
     }
 
     .screenshots {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 1rem;
+      gap: 1.5rem;
+      margin-top: 2rem;
     }
 
     .screenshots img {
-      max-width: 200px;
+      width: 200px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
     footer {
-      background-color: #f0f0f0;
+      background: #f1f1f1;
       text-align: center;
       padding: 2rem 1rem;
       font-size: 0.9rem;
-      color: #777;
+      color: #666;
+    }
+
+    footer a {
+      color: #007aff;
+      text-decoration: none;
+      margin-left: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .screenshots img {
+        width: 100%;
+        max-width: 300px;
+      }
     }
   </style>
 </head>
@@ -103,41 +129,42 @@
 
   <header>
     <h1>Sudoku 25</h1>
-    <p>Challenge your brain with advanced statistics & beautiful design</p>
+    <p>Advanced Sudoku with smart stats and beautiful design</p>
     <a class="cta-button" href="https://apps.apple.com/app/your-app-id">Download on the App Store</a>
   </header>
 
   <section class="section">
-    <h2 style="text-align:center;">Why You'll Love Sudoku 25</h2>
+    <h2>Why Sudoku 25?</h2>
     <div class="features">
       <div class="feature">
-        <h3>Smart Statistics</h3>
-        <p>Track your progress, average solve times, and mistake patterns.</p>
+        <h3>Advanced Stats</h3>
+        <p>Track solve times, mistake averages, and puzzle difficulty with precision.</p>
       </div>
       <div class="feature">
-        <h3>Clean Interface</h3>
-        <p>Enjoy a clutter-free, modern Sudoku experience with subtle animations.</p>
+        <h3>Elegant Interface</h3>
+        <p>Minimalist design with smooth interactions and focus-enhancing layout.</p>
       </div>
       <div class="feature">
-        <h3>Adaptive Difficulty</h3>
-        <p>Play from easy to expert puzzles with true logic-based generation.</p>
+        <h3>Logical Difficulty</h3>
+        <p>True difficulty ratings based on logic complexity, not just empty squares.</p>
       </div>
     </div>
   </section>
 
   <section class="section">
-    <h2 style="text-align:center;">App Preview</h2>
+    <h2>App Preview</h2>
     <div class="screenshots">
-      <img src="screenshot1.png" alt="Sudoku game screen">
-      <img src="screenshot2.png" alt="Statistics screen">
+      <img src="screenshot1.png" alt="Gameplay screen">
+      <img src="screenshot2.png" alt="Stats screen">
       <img src="screenshot3.png" alt="Puzzle list screen">
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Sudoku 25. All rights reserved. | Made with ❤️ for Sudoku lovers
+    &copy; 2025 Sudoku 25. All rights reserved.
+    <br />
+    <a href="privacy.html">Privacy Policy</a>
   </footer>
 
 </body>
 </html>
-
